@@ -1,0 +1,17 @@
+#pragma once
+
+#include "Pi_Core.h"
+
+//Error codes
+#define PI_EC_OK				0x00000000
+
+//Problematic Error Codes
+#define PI_EC_NULLPTR_EXCEPT	0x00000001
+#define PI_EC_ALLOC_FAIL		0x00000002
+
+#ifdef PI_PLATFORM_WINDOWS
+#define PI_EC_OPENGL_PIXELFORMAT 0x00000003
+#define PI_EC_OPENGL_CONTEXT_CREATION   0x00000004
+#define PI_EC_OPENGL_CONTEXT_DELETION   0x00000005
+#define PI_EC_OPENGL_BUFFER_SWAP    0x00000006
+#endif
